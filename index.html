@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Glide Yes-Code</title>
+</head>
+<div>
+  <span id="result"></span>
+</div>
+<script src="function.js"></script>
+<script src="driver.js"></script>
+
+
+<script>
+  // TEST DEBUG !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  testDebug();
+
+  async function testDebug() {
+  let tab = { type: { "kind": "array", "items": "string" },
+   value: ['test1', 'test2', 'test3', 'test1', 'test4'] };
+  let txt = { type: "string", value: "test1" };
+  let option = { type: "boolean", value: 0 };
+
+  let result = await window.function(tab, txt, option);
+  document.getElementById("result").innerHTML = result;
+  
+  }
+</script>
+</body>
+
+</html>

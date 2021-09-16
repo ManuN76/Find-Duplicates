@@ -1,0 +1,28 @@
+[
+  {
+    "kind": "column",
+    "name": "Trouver un doublon",
+    "description": "Détection d'une chaine déjà existante.",
+    "author": "Manu.n",
+    "params": [
+      {
+        "name": "tab",
+        "displayName": "Tableau",
+        "type": { "kind": "array", "items": "string" }
+      },
+      {
+        "name": "txt",
+        "displayName": "String",
+        "type": "string"
+      },
+      {
+        "name": "option",
+        "displayName": "Case : 1:sensitive, 0:none",
+        "type": "boolean"
+      }
+    ],
+    "result": {
+      "type": "string"
+    }
+  }
+]
